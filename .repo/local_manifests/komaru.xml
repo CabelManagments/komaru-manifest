@@ -1,1 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Этот проект говорит repo использовать ТВОЙ форк ядра вместо стандартного -->
+  <project name="https://github.com/CabelManagments/kernel_for_komary_os" path="kernel/google/sunfish" remote="github" />
 
+  <!-- А этот проект говорит использовать ТВОЙ форк фреймворков -->
+  <project name="/https://github.com/CabelManagments/android_frameworks_base_for_komaru_os" path="frameworks/base" remote="github" />
+  
+  <!-- Все остальное (стандартные репозитории LineageOS) repo подтянет само, это просто пример структуры -->
+  <project name="LineageOS/android_device_google_sunfish" path="device/google/sunfish" remote="github" />
+</manifest>
